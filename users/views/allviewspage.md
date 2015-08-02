@@ -54,6 +54,40 @@
 
 </code>
 
+# show.blade.php
+
+<code>
+@extends('songs.master')
+
+@section('title')
+   Editing Users 
+@stop
+
+@section('content')
+
+    
+{!! Form::model($id, ["route" => ["user.update", $id->id], "method" => "PUT"]) !!}
+    
+
+
+{!! Form::label('Name') !!} {!! Form::text('name')!!}
+
+{!! Form::label('Email') !!} {!! Form::text('email')!!}
+
+
+
+{!! Form::submit('Update Users') !!}
+
+{!! Form::close() !!}
+
+
+@stop
+
+@section('footer')
+   Editing Users
+@stop
+</code>
+
 # edit.blade.php
 <code>
 @extends('songs.master')
