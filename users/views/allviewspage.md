@@ -24,6 +24,7 @@
 </body>
 </html>
 </code>
+-------------------------------------
 
 # index.blade.php
 <code>
@@ -53,8 +54,9 @@
    
 @stop
 </code>
-
+-------------------------------------
 # show.blade.php
+
 <code>
 @extends('songs.master')
 
@@ -82,6 +84,7 @@
   
 @stop
 </code>
+-------------------------------------
 
 # edit.blade.php
 <code>
@@ -121,6 +124,7 @@
    Editing Users
 @stop
 </code>
+-------------------------------------
 
 # create.blade.php
 <code>
