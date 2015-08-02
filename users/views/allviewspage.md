@@ -34,18 +34,15 @@
 @stop
 
 @section('content')
-<h1>
-    List of Users
-</h1> 
+
 @foreach($users as $user)
     
-<h3>
+
     <a href='/user/{{ $user->id }}'>
         
         {{ $user->name }}
     </a>
-    
-</h3>
+
 @endforeach
 
 @stop
@@ -66,17 +63,15 @@
 @stop
 
 @section('content')
-<h1>
-    Detail of Users
-</h1> 
+ 
 
-<h2>
+
       {{ $id->name }}
-</h2>
 
-<h4>
+
+
      {{ $id->email }}
-</h4>
+
 <a href="{{ $id->id }}/edit">Edit</a>
 <p>
     <a href="/user">HOME</a>
@@ -97,9 +92,7 @@
 @stop
 
 @section('content')
-<h1>
-    Editing Users
-</h1> 
+
 
 <div class="form-group">
     
@@ -138,9 +131,7 @@
 @stop
 
 @section('content')
-<h1>
-    Create New Users
-</h1> 
+
 @foreach ($errors->all() as $error)
 <li>
     {{ $error }}
