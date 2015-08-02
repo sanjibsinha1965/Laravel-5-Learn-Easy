@@ -49,15 +49,15 @@
 @stop
 
 @section('footer')
-<p>
-    <a href="/user/create">Create New Users</a> 
-   
+
 @stop
+
 </code>
 -------------------------------------
 # show.blade.php
 
 <code>
+
 @extends('songs.master')
 
 @section('title')
@@ -65,19 +65,15 @@
 @stop
 
 @section('content')
- 
-
-
-      {{ $id->name }}
-
-
+  {{ $id->name }}
 
      {{ $id->email }}
 
+
 <a href="{{ $id->id }}/edit">Edit</a>
-<p>
+
     <a href="/user">HOME</a>
-</p>
+
 @stop
 
 @section('footer')
