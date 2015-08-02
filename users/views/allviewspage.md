@@ -53,34 +53,6 @@
 @stop
 
 </code>
--------------------------------------
-# show.blade.php
-
-<code>
-
-@extends('songs.master')
-
-@section('title')
-   Detail of Users  
-@stop
-
-@section('content')
-  {{ $id->name }}
-
-     {{ $id->email }}
-
-
-<a href="{{ $id->id }}/edit">Edit</a>
-
-    <a href="/user">HOME</a>
-
-@stop
-
-@section('footer')
-  
-@stop
-</code>
--------------------------------------
 
 # edit.blade.php
 <code>
